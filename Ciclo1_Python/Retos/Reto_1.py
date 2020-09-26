@@ -28,7 +28,7 @@ def nota_quices(CodEst, N1 = 0, N2 = 0, N3 = 0, N4 = 0, N5 = 0):
     Returns
     -------
     respuesta : str
-        el promedio ajustado del estudiante {CodEst} es: {promedio}.
+        El promedio ajustado del estudiante {CodEst} es: {promedio}.
 
     """
     
@@ -45,8 +45,8 @@ def nota_quices(CodEst, N1 = 0, N2 = 0, N3 = 0, N4 = 0, N5 = 0):
     Promed = escalar(Promed)
     
     #sentencia de retorno
-    respuesta = 'el promedio ajustado del estudiante ' + CodEst + ' es: ' + str(Promed)
-    return respuesta
+    respuesta = 'El promedio ajustado del estudiante {} es: {}'
+    return respuesta.format(CodEst,Promed)
 
 print(nota_quices('AA0010276',19,90,38,55,68))
 print(nota_quices('IS00201620',37,10,50,19,79))
